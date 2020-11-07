@@ -1,5 +1,4 @@
 /**
- * MitM: 113.59.43.66, api.zhihu.com
  * ^https://api\.zhihu\.com/commercial_api/launch_v2 url script-response-body zhihu/zhihu_launch.js
  * 
  */
