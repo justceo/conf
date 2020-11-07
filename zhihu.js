@@ -1,3 +1,12 @@
+/* by Huson
+QX:
+^https:\/\/api\.zhihu\.com\/answers\/.*\/comments\/featured-comment url reject-img
+^https:\/\/api\.zhihu\.com\/appview\/api\/v4\/answers\/.*\/recommendations url reject-img
+^https:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|v\d\/questions|market\/header|people\/) url script-response-body https://raw.githubusercontent.com/0x01-0xff/ProxyConf/master/js/ZhiHu_All.js
+[MITM]
+hostname = api.zhihu.com
+*/
+
 let body = $response.body;
 let url = $request.url;
 body = JSON.parse(body);
